@@ -16,6 +16,7 @@ Delete the following parent pom references from pom.xml file
 <version>26-SNAPSHOT</version>  
  			<relativePath />  
 </parent>   
+```html
 4. Change the version of stripe dependency from 1.6.0 to 1.5.8  
  change “<version>1.6.0</version>” to “<version>1.5.8</version>”  
 5. Comment out the two override annotation (@override) from the org.mybatis.jpetstore.web.actions.AbstractActionBean.java file  
