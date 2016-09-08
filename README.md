@@ -17,9 +17,9 @@ Delete the following parent pom references from pom.xml file
  			<relativePath />  
 </parent>   
 ```
-4. Change the version of stripe dependency from 1.6.0 to 1.5.8  
- change “<version>1.6.0</version>” to “<version>1.5.8</version>”  
-5. Comment out the two override annotation (@override) from the org.mybatis.jpetstore.web.actions.AbstractActionBean.java file  
+4.Change the version of stripe dependency from 1.6.0 to 1.5.8  
+5.Change “<version>1.6.0</version>” to “<version>1.5.8</version>”  
+ Comment out the two override annotation (@override) from the org.mybatis.jpetstore.web.actions.AbstractActionBean.java file  
 6. Right Click the project -> Maven -> Update Project
 7. Add Tomcat 7 server to eclipse
 8. Eclipse -> Preferences -> Server -> Runtime Environment -> Add -> Select the tomcat7 directory
