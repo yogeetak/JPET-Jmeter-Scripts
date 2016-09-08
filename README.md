@@ -3,20 +3,22 @@ Preconditions:
 The idea behind the project is to develop optimal cloud provisioning strategies for the JPetStore application. Ensure the application is
 setup and running successfully before running these tests. 
 
-Running JpetStore with Tomcat in Mac:
-1. Download and Unzip Tomcat 7
-2. Download the jpetstore source from https://github.com/mybatis/jpetstore-6
-3. From Eclipse, Import -> Maven -> Existing Maven Projects -> select the unzipped jpetstore source
-Delete the following parent pom references from pom.xml file
- <parent>
- 	<groupId>org.mybatis</groupId>
-<artifactId>mybatis-parent</artifactId>
-<version>26-SNAPSHOT</version>
- 			<relativePath />
-</parent>
-4. Change the version of stripe dependency from 1.6.0 to 1.5.8
- change “<version>1.6.0</version>” to “<version>1.5.8</version>”
-5. Comment out the two override annotation (@override) from the org.mybatis.jpetstore.web.actions.AbstractActionBean.java file
+Running JpetStore with Tomcat in Mac:  
+ 
+1. Download and Unzip Tomcat 7  
+2. Download the jpetstore source from https://github.com/mybatis/jpetstore-6  
+3. From Eclipse, Import -> Maven -> Existing Maven Projects -> select the unzipped jpetstore source  
+Delete the following parent pom references from pom.xml file  
+```html 
+<parent>  
+ 	<groupId>org.mybatis</groupId>  
+<artifactId>mybatis-parent</artifactId>  
+<version>26-SNAPSHOT</version>  
+ 			<relativePath />  
+</parent>   
+4. Change the version of stripe dependency from 1.6.0 to 1.5.8  
+ change “<version>1.6.0</version>” to “<version>1.5.8</version>”  
+5. Comment out the two override annotation (@override) from the org.mybatis.jpetstore.web.actions.AbstractActionBean.java file  
 6. Right Click the project -> Maven -> Update Project
 7. Add Tomcat 7 server to eclipse
 8. Eclipse -> Preferences -> Server -> Runtime Environment -> Add -> Select the tomcat7 directory
